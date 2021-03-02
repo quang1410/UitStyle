@@ -1,0 +1,423 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    color: #000;
+}
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+ .fas-fix {
+    font-size: 22px;
+    position: relative;
+    top: 2px;
+    left: 5px;
+}
+.divTitle {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 30px;
+    width: 100%;
+    padding-left: 25px;
+    white-space: normal;
+}
+.center {
+    text-align: center;
+    padding: 0;
+    display: block;
+}
+
+
+/* Css for Collection */
+.divCollection {
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.divCollection .divItem {
+    width: 20%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.divCollection .divItem img {
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+.divCollection .divItem:hover img {
+    transform: scale(1.04);
+}
+.divCollection .divItem .itemTitle {
+    font-weight: bold;
+    font-size: 16px;
+    display: inline;
+}
+.divCollection .divItem:hover .itemTitle{
+    border-bottom: 2px #000 solid;
+}
+.divCollection .divItem span {
+    color: #605e5c;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Css for Menu */
+.divMenu {
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.divMenu .divItem {
+    width: 15%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+.divMenu .divItem .add-to-cart {
+	padding: 5px 7px;
+	background-color: #f0b811;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 600;
+	border: 0;
+	color: #fff;
+	margin: 10px auto 0;
+	display: block;
+    font-size: 14px;
+    outline: 0;
+}
+.divMenu .divItem .itemTitle {
+    font-weight: 500;
+    text-align: center;
+    display: block;
+    transition: 0.4s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 5px auto;
+}
+.divMenu .divItem:hover .itemTitle{
+    text-decoration: underline;
+    color: #605e5c;
+}
+.divMenu .divItem img {
+    width: 100%;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+.divMenu .divItem span {
+    color: #ff0000;
+    display: block;
+    text-align: center;
+    margin-top: 5px;
+}
+
+
+#triangle-down {
+    background-color: #f0b811;
+    color: white;
+    width: 40px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    padding-top: 5px;
+}
+#triangle-down::after {
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 12px solid #f0b811; 
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+}
+.titleDsp {
+    font-size: 18px;
+    margin: 5px 0 20px;
+}
+.divFavourite {
+    margin: 20px 0;
+    padding: 10px 0 20px;
+    background-color: #f0f0f0;
+}
+.favourMenu {
+    margin: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.favourMenu .divItem {
+    width: 30%;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 30px;
+    color: #605e5c;
+    position: relative;
+}
+.favourMenu .divItem img {
+    width: 100%;
+}
+.favourMenu .divItem span{
+    display: block;
+    font-weight: 500;
+}
+
+@media only screen and (max-width: 1024px) {
+    .divTitle {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    /* Css for Collection */
+    .divCollection {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0;
+    }
+    .divCollection .divItem {
+        width: 30%;
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .divCollection .divItem img {
+        width: 100%;
+        margin-bottom: 10px;
+        transition: 0.4s;
+        display: block;
+    }
+    .divCollection .divItem .itemTitle {
+        font-weight: bold;
+        font-size: 16px;
+        display: inline;
+        white-space: normal;
+    }
+    .divCollection .divItem:hover .itemTitle{
+        border-bottom: 2px #000 solid;
+    }
+    .divCollection .divItem span {
+        color: #605e5c;
+        display: block;
+        margin-top: 5px;
+        white-space: normal;
+    }
+    .divCollection::-webkit-scrollbar {
+        display: none;
+    }
+    /* Css for Menu */
+    .divMenu {
+        display: block;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-top: 0px;
+        position: relative;
+    }
+    .divMenu::-webkit-scrollbar {
+        display: none;
+    }
+    .divMenu .divItem {
+        width: 28%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .divMenu .divItem .add-to-cart {
+        display: none;
+    }
+    .divMenu .divItem .itemTitle {
+        width: 100%;
+        display: block;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    #triangle-down {
+    background-color: #f0b811;
+    color: white;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    padding-top: 5px;
+}
+#triangle-down::after {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #f0b811;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+    /*  */
+    .favourMenu {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin: 0;
+    }
+    .favourMenu .divItem {
+        width: 82%;
+        padding: 0 15px;
+        display: inline-block;
+        text-align: center;
+    }
+    .favourMenu .divItem img {
+        width: 100%;
+    }
+    .favourMenu .divItem span{
+        display: block;
+        font-weight: 500;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .divTitle {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+    /* Css for Collection */
+    .divCollection {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        margin: 0;
+    }
+    .divCollection::-webkit-scrollbar {
+        display: none;
+    }
+    .divCollection .divItem {
+        width: 92%;
+        display: inline-block;
+        padding: 0 15px;
+    }
+    .divCollection .divItem .itemTitle {
+        font-size: 14px;
+        display: inline;
+        white-space: normal;
+    }
+    .divCollection .divItem span {
+        font-size: 13px;
+        display: block;
+        white-space: normal;
+        text-align: justify;
+    }
+    .divCollection .divItem img {
+        width: 40%;
+        float: left;
+        margin-right: 15px;
+    }
+    /* Css for Menu */
+    .divMenu {
+        display: block;
+        overflow-x: scroll;
+        overflow-y: scroll;
+        white-space: nowrap;
+        margin-top: 0px;
+        position: relative;
+    }
+    .divMenu::-webkit-scrollbar {
+        display: none;
+    }
+    .divMenu .divItem {
+        width: 35%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+    .divMenu .divItem .add-to-cart {
+        display: none;
+    }
+    .divMenu .divItem .itemTitle {
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: block;
+        text-align: center;
+    }
+    #triangle-down {
+    background-color: #f0b811;
+    color: white;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    padding-top: 5px;
+}
+#triangle-down::after {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 10px solid #f0b811;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+    /*  */
+    .favourMenu {
+        display: block;
+        white-space: nowrap;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin: 0;
+    }
+    .favourMenu .divItem {
+        width: 92%;
+        padding: 0 15px;
+        display: inline-block;
+        text-align: center;
+    }
+    .favourMenu .divItem img {
+        width: 100%;
+    }
+    .favourMenu .divItem span{
+        display: block;
+        font-weight: 500;
+        text-align: center;
+    }
+}

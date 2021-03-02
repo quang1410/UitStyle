@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UIT Style - Thương hiệu thời trang Nam hàng đầu Việt Nam</title>
+
+    <!-- Begin CSS & Javascript Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- End CSS & Javascript Bootstrap -->
+
+    <!-- Begin CSS & Javascript Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <script src="https://kit.fontawesome.com/1850241b68.js" crossorigin="anonymous"></script>
+    <!-- End CSS & Javascript Fontawesome -->
+
+    <!-- Begin Jquery Links-->
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- End Jquery Links-->
+
+    <!-- Begin My Website Jquery Links-->
+    <script type="text/javascript" src="jquery/main.js"></script>
+    <!-- End My Website Jquery Links-->
+
+    <!-- Begin My Website CSS Links-->
+    <link rel="stylesheet" href="css/header.css" type="text/css">
+    <link rel="stylesheet" href="css/header_responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- End My Website CSS Links-->
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div id="over-layer"></div>
+      <div id="cart-panel">
+          <div class="cart-panel-header">
+              <div>GIỎ HÀNG CỦA BẠN</div>
+              <img src="images/icon/times-solid.svg" id="cart-panel-close">
+          </div>
+          <div class="cart-panel-body">
+              <div id="no-item">Hiện tại chưa có sản phẩm nào trong giỏ hàng của bạn</div>
+              <button id="continue-shopping">TIẾP TỤC MUA SẮM</button>
+              <div id="cart-item-list">
+                <!-- <div class="cart-item">
+                  <img src="images/1.webp">
+                  <div class="item-detail">
+                    <span class="item-title">Áo Sweater Nam Ép Nhung MSW 1002</span>
+                    <div class="item-price">
+                      <div class="item-number">
+                        <input type="text" value="1">
+                        <img src="images/icon/caret-up-solid.svg" alt="" class="number-up">
+                        <img src="images/icon/caret-down-solid.svg" alt="" class="number-down">
+                      </div>
+                      x 389,000 VND
+
+                    </div>
+                  </div>
+                  <a class="delete-item">
+                    <img src="images/icon/trash-alt-regular.svg" alt="">
+                  </a>
+                </div> -->
+              </div>
+              <div class="payment">
+                <div class="price-to-pay">
+                  <p>THÀNH TIỀN</p>
+                  <p class="total-price"><span id="price">3.099.000</span> VNĐ</p>
+                  <p id="total-price-hidden">0</p>
+                </div>
+                <button id="pay-btn">Thanh toán</button>
+              </div>
+          </div>
+          <div class="cart-panel-footer">
+              <div>Bảo hành 10 năm lỗi nhà sản xuất</div>
+              <div>Freeship với đơn hàng > 700K</div>
+          </div>
+      </div>
+    <div class="arrow">
+        <a href="#" title="Back to Top"><i class="fas fa-angle-double-up"></i></a>
+    </div>
+    <div class="container-fluid">
+      <div class="grid">
+        <nav class="header fixed-top">
+              <ul class="nav-list">
+                <div class="nav-bars">
+                  <li class="nav-list-item">  
+                    <label for="nav-mobile-check-input">
+                      <i class="fas fa-bars"></i>
+                    </label>
+                  </li>
+                </div>
+                <div class="nav-logo">
+                  <li class="nav-list-item">
+                    <span class="logo">UIT STYLE</span>
+                  </li>
+                </div>
+                <div class="nav_bar_list">
+                  <li class="nav-list-item ">
+                    <a href="" class="nav-item-link ">
+                      <span class="nav-item-text">HÀNG MỚI VỀ</span>
+                    </a>
+                    <div class="header-dropdown-men new-item" style="left:-120%">
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Bộ Sưu Tập</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Anh Chàng Cá Tính</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Nam ơi!Đi Chơi Mặc Gì?</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Áo Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Khoác</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Thun</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Sơ Mi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Polo</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Quần Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Ngắn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Dài</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần KaKi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Tây</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Khám Phá</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Hàng Mới</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Được Ưa Chuộn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Sale Hấp Dẫn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Bán Chạy Nhất</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="" class="nav-item-link">
+                      <span class="nav-item-text">NAM</span>
+                    </a>
+                    <div class="header-dropdown-men men">
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Bộ Sưu Tập</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Anh Chàng Cá Tính</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Nam ơi!Đi Chơi Mặc Gì?</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Áo Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Khoác</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Thun</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Sơ Mi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Polo</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Quần Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Ngắn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Dài</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần KaKi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Tây</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Khám Phá</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Hàng Mới</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Được Ưa Chuộn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Sale Hấp Dẫn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Bán Chạy Nhất</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="" class="nav-item-link">
+                      <span class="nav-item-text">PHỤ KIỆN</span>
+                    </a>
+                    <div class="header-dropdown-men accessories ">
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Bộ Sưu Tập</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Anh Chàng Cá Tính</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Nam ơi!Đi Chơi Mặc Gì?</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Áo Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Khoác</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Thun</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Sơ Mi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Polo</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Quần Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Ngắn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Dài</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần KaKi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Tây</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Khám Phá</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Hàng Mới</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Được Ưa Chuộn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Sale Hấp Dẫn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Bán Chạy Nhất</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </li>
+                  <li class="nav-list-item">
+                    <a href="" class="nav-item-link">
+                      <span class="nav-item-text">SALE</span>
+                    </a>
+                    <div class="header-dropdown-men sale">
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Bộ Sưu Tập</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Anh Chàng Cá Tính</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Nam ơi!Đi Chơi Mặc Gì?</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Áo Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Khoác</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Thun</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Sơ Mi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Áo Polo</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Quần Nam</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Ngắn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Dài</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần KaKi</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Quần Tây</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-sm-3">
+                            <h5 class="header-dropdown">Khám Phá</h5>
+                            <ul class="header-dropdown-list">
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Hàng Mới</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Được Ưa Chuộn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Sale Hấp Dẫn</a>
+                              </li>
+                              <li class="header-dropdown-list-item">
+                                <a href="" class="HDL-item-link">Bán Chạy Nhất</a>
+                              </li>
+                            </ul>
+                          </div>
+                    </div>
+                  </li>
+                </div>
+              </ul>
+              <ul class="list-icon">
+                <li class="list-item-icon list-item-icon-hide-phone">
+                  <a href="" class="icon-link">
+                    <i class="fas fa-phone-volume icon phone"></i>
+                  </a>
+                  <div class="header-dropdown-icon_phone">
+                    <span class="icon_phone-text">
+                          ĐẶT HÀNG ONLINE:18006516 LINE 1
+                    </span>
+                    <span class="icon_phone-text">
+                          KHIẾU NẠI DỊCH VỤ:18006516 LINE 2
+                    </span>
+                  </div>
+                </li>
+                <li class="list-item-icon list-item-icon-hide">
+                  <a href="" class="icon-link search-link">
+                    <i class="fas fa-search icon" style="margin-right:10px;"></i>
+                  </a>
+                  <div class="header-icon-search">
+                    <input type="text" class="icon-input-search" placeholder="Tìm kiếm">
+                  </div>
+                </li>
+                <li class="list-item-icon">
+                  <a href="" class="icon-link">
+                    <i class="fas fa-user-circle icon" ></i>
+                  </a>
+                  <div class="header-dropdown-login">
+                    <h5 class="header-login">Đăng Nhập</h5>
+                    <div class="header-login-content">
+                      <input type="text" class="login-email" placeholder="Email...">
+                      <input type="password" placeholder="Mật Khẩu..." class="login-password">
+                      <span class="login-text"><a href="" class="login-text-link">
+                        Quên mật khẩu? Đăng nhập bằng số điện thoại
+                      </a></span>
+                      <button class="btn-login">
+                        Đăng Nhập</button>
+                      <hr class="hr">
+                      <span class="login-text">hoặc Đăng nhập với</span>
+                      <button class="btn-login-different">
+                        <i class="fab fa-google-plus-g"></i> Đăng Nhập Với Google
+                      </button>
+                      <button class="btn-login-different">
+                        <i class="fab fa-facebook-f"></i> Đăng Nhập Với Facebook
+                      </button>
+                      <hr class="hr">
+                      <button class="btn-sign">Đăng ký Tài Khoản</button>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-item-icon">
+                  <i href="" class="icon-link" id="cart-panel-open">
+                    <i class="fas fa-cart-plus icon"></i>
+                    <div>0</div>
+                  </i>
+                </li>
+              </ul>
+              <input type="checkbox" hidden style="display: none;" class="nav-check-input" id="nav-mobile-check-input">
+              <label for="nav-mobile-check-input" class="nav-overlay">
+              </label>
+              <div class="nav-mobile">
+                <label for="nav-mobile-check-input" for="nav-mobile-check-input"v class="nav-mobile-close">
+                  <i class="fas fa-times"></i>
+                </label>
+                <div class="nav-mobile-search">
+                  <div class="nav-mobile-search-input">
+                    <input type="text" class="nav-mobile-input" placeholder="Tìm Kiếm" width="100%">
+                  </div>
+                  <div class="nav-mobile-search-icon">
+                    <a href="#" class="nav-mobile-search-icon-link">
+                      <span>
+                        <i class="fas fa-search icon"></i>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <hr>
+                <ul class="nav-mobile-list">
+                  <li class="nav-mobile-item" id="newback">
+                    <span class="nav-mobile-item-text">Hàng Mới Về</span>
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="mobile-list" id="newitemback">
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Áo Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Quần Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Sale Dành Cho Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Phụ Kiện Cho Nam
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-mobile-item" id="men">
+                    <span class="nav-mobile-item-text">Nam</span>
+                    <i class="fas fa-angle-down"></i>
+                    <ul class="mobile-list" id="men-item">
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Áo Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Quần Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Sale Dành Cho Nam
+                        </a>
+                      </li>
+                      <li class="mobile-item">
+                        <a href="" class="mobile-item-link">
+                          Phụ Kiện Cho Nam
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-mobile-item">
+                    <span class="nav-mobile-item-text">Phụ Kiện</span>
+                    <i class="fas fa-angle-down"></i>
+                  </li>
+                  <li class="nav-mobile-item">
+                    <span class="nav-mobile-item-text">Sale</span>
+                    <i class="fas fa-angle-down"></i>
+                  </li>
+                  <hr>
+                  <li class="nav-mobile-item">
+                    <div class="item-information">
+                      <div class="item-information-icon"><i class="fas fa-user-circle icon" ></i></div>
+                      <span class="nav-mobile-item-text">Thông tin tài khoản</span>
+                    </div>
+                  </li>
+                  <li class="nav-mobile-item">
+                    <div class="item-information">
+                      <div class="item-information-icon"><i class="fas fa-history icon"></i></div>
+                      <span class="nav-mobile-item-text">Lịch sử mua hàng</span>
+                    </div>
+                  </li>
+                  <li class="nav-mobile-item">
+                    <div class="item-information">
+                      <div class="item-information-icon"><i class="fas fa-address-card icon "></i></div>
+                      <span class="nav-mobile-item-text">Danh sách địa chỉ</span>                  
+                    </div>
+                  </li>
+                  <li class="nav-mobile-item">
+                    <div class="item-information">
+                      <div class="item-information-icon"><i class="fas fa-phone-volume icon"></i></div>
+                      <span class="nav-mobile-item-text">Liên hệ</span>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+      </div>
+    </div>
+  <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true">
+          <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+          <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="image/slide_1.webp" alt="Los Angeles" width="100%" height="522px">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slide_2.webp" alt="Chicago" width="100%" height="522px">
+              </div>
+              <div class="carousel-item">
+                <img src="image/slide_5.webp" alt="New York" width="100%" height="522px">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+    </div>
+  </header>
+  <!-- /Header -->
+  <div class="divTitle">HÀNG MỚI VỀ
+  </div>
+  <div class="divMenu" id="divMenu1">
+      <a class="divItem">
+          <img src="images/1.webp" alt="">
+          <div class="itemTitle">
+              Áo Sweater Nam Ép Nhung MSW 1002
+          </div>
+          <span>389,000 VND</span>
+          <div class="product-price-hidden">389000</div>
+          <div id="triangle-down">New</div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </a>
+      <a class="divItem">
+          <img src="images/2.webp" alt="">
+          <div class="itemTitle">
+              Áo Sweater Nữ Ép Nhung MSW 1002
+          </div>
+          <span>399,000 VND</span>
+          <div class="product-price-hidden">399000</div>
+          <div id="triangle-down">New</div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </a>
+      <a class="divItem">
+          <img src="images/3.webp" alt="">
+          <div class="itemTitle">
+              Áo Sweater Nam Thun MSW 1002
+          </div>
+          <span>489,000 VND</span>
+          <div class="product-price-hidden">489000</div>
+          <div id="triangle-down">New</div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </a>
+      <a class="divItem">
+          <img src="images/4.webp" alt="">
+          <div class="itemTitle">
+              Áo Sweater Nam Ép Nhung MSW 1002
+          </div>
+          <span>389,000 VND</span>
+          <div class="product-price-hidden">389000</div>
+          <div id="triangle-down">New</div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </a>
+      <a class="divItem">
+          <img src="images/5.webp" alt="">
+          <div class="itemTitle">
+              Áo Sweater Nam Ép Nhung MSW 1002
+          </div>
+          <span>389,000 VND</span>
+          <div class="product-price-hidden">389000</div>
+          <div id="triangle-down">New</div>
+          <button class="add-to-cart">Thêm vào giỏ hàng</button>
+      </a>
+  </div>
+    <div class="divTitle">DEAL HOT-SĂN NGAY KẺO LỠ</div>
+    <div class="divMenu">
+      <div class="divMenu" id="divMenu1">
+        <a class="divItem">
+            <img src="images/1.webp" alt="">
+            <div class="itemTitle">
+                Áo Sweater Nam Ép Nhung MSW 1002
+            </div>
+            <span>389,000 VND</span>
+            <div class="product-price-hidden">389000</div>
+            <div id="triangle-down">New</div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </a>
+        <a class="divItem">
+            <img src="images/2.webp" alt="">
+            <div class="itemTitle">
+                Áo Sweater Nữ Ép Nhung MSW 1002
+            </div>
+            <span>399,000 VND</span>
+            <div class="product-price-hidden">399000</div>
+            <div id="triangle-down">New</div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </a>
+        <a class="divItem">
+            <img src="images/3.webp" alt="">
+            <div class="itemTitle">
+                Áo Sweater Nam Thun MSW 1002
+            </div>
+            <span>489,000 VND</span>
+            <div class="product-price-hidden">489000</div>
+            <div id="triangle-down">New</div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </a>
+        <a class="divItem">
+            <img src="images/4.webp" alt="">
+            <div class="itemTitle">
+                Áo Sweater Nam Ép Nhung MSW 1002
+            </div>
+            <span>389,000 VND</span>
+            <div class="product-price-hidden">389000</div>
+            <div id="triangle-down">New</div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </a>
+        <a class="divItem">
+            <img src="images/5.webp" alt="">
+            <div class="itemTitle">
+                Áo Sweater Nam Ép Nhung MSW 1002
+            </div>
+            <span>389,000 VND</span>
+            <div class="product-price-hidden">389000</div>
+            <div id="triangle-down">New</div>
+            <button class="add-to-cart">Thêm vào giỏ hàng</button>
+        </a>
+</body>
+</html>

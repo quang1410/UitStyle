@@ -1,0 +1,429 @@
+/* Style của Đặt hàng */
+*{
+    margin: 0;
+}
+a.logo{
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    /* line-height: 58px; */
+    cursor: pointer;
+    font-weight: bold;
+    color: #000;
+}
+
+a:hover.logo{
+    text-decoration: none;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-color: white;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: #4b9ac4;
+}
+
+a:active{
+    color: purple;
+}
+
+input{
+    padding-left: 5px;
+}
+
+.content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding-left: 8%;
+    line-height: 30px;
+    overflow-x: hidden;
+}
+
+.banner{
+    display: none;
+    width: 100%;
+    flex-shrink: 0;
+    text-align: center;
+    line-height: 54px;
+    overflow-x: hidden;
+}
+
+.banner .logo-text {
+    color: royalblue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.content .content-first{
+    width: 45%;
+    padding: 3% 6% 3% 2%;
+    background-color: #ffffff;
+    border-right: 1px black solid;
+}
+
+.content .content-first .section-one, 
+.content .content-first .section-two{  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .content-first .section-one span,
+.content .content-first .section-two span{
+    color: gray;
+}
+
+.content .content-first .section-one .logo{
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+}
+
+.content .content-first .section-one .link{
+    font-size: 12px;
+}
+
+.content .content-first .section-one .security{
+    width: 100%;
+    line-height: 50px;
+    text-indent: 60px;
+    background-color: #eceaeb;
+    border-radius: 5px;
+    position: relative;
+}
+
+.content .content-first .section-one .security #icon{
+    position: absolute;
+    top: 10px;
+    left: -40px;
+}
+
+.content .content-first .section-two .user-login{
+    padding-bottom: 15px;
+}
+
+.content .content-first .section-two .user-login .login-header{
+    font-size: 18px;
+    padding-top: 15px;
+}
+
+.content .content-first .section-two .user-input .user-info{
+    width: 100%;
+}
+
+.content .content-first .section-two .user-input .user-info .box1{
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+    height: 40px;
+    margin: 5px 0;
+    text-indent: 15px;
+    border-spacing: 5px;
+}
+
+.content .content-first .section-two .user-input .user-info .box1 input{
+    position: absolute;
+    top: 5px;
+    left: 1px;
+    width: 98%;
+    line-height: 30px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    border: none;
+}
+
+select {
+    margin-top: 1.5em;
+    padding-right: 20px;
+    border: none;
+}  
+
+.content .content-first .section-two .user-input .user-info .box1 input:focus,
+select:focus{
+    outline: none;
+}
+
+.content .content-first .section-two .user-input .user-info .extra {
+    position: relative;
+    height: 48px;
+}
+
+.content .content-first .section-two .user-input .user-info .extra input{
+    position: absolute;
+    top: 20px;
+    line-height: 20px;
+}
+
+.content .content-first .section-two .user-input .user-info .extra label {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    font-size: 13px;
+    color: gray;
+}
+
+.content .content-first .section-two .user-input .user-info .alert{
+    color: #f77705;
+}
+
+.content .content-first .section-two .user-input .method{
+    width: 100%;
+}
+
+.content .content-first .section-two .user-input .method-header{
+    font-size: 18px;
+    padding: 18px 0;
+}
+.content .content-first .section-two .user-input .transport{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    line-height: 40px;
+    height: 40px;
+    text-indent: 20px;
+}
+
+.content .content-first .section-two .user-input .transport .box2 span{
+    padding-left: 10px;
+}
+.content .content-first .section-two .user-input .pay{
+    border-collapse: separate ;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.content .content-first .section-two .user-input .pay .box2{
+    border: 1px solid gray;
+    line-height: 40px;
+    text-indent: 20px;
+    width: 100%;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.content .content-first .section-two .user-input .pay span{
+    padding-left: 10px;
+    width: 100%;
+}
+
+.content .content-first .section-two .user-input .pay .first{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.content .content-first .section-two .user-input .pay .last{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.content .content-first .section-two .user-input .input-finish{
+    width: 100%;
+    padding: 20px 0;
+}          
+
+.content .content-first .section-two .user-input .input-finish button{
+    width: 164px;
+    height: 56px;
+    background-color: #338dbc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    float: right;
+}
+
+.content .content-first .section-two .user-input .input-finish a{
+    line-height: 56px;
+}
+
+.content .content-second{
+    width: 40%;
+    float: right;
+    padding: 3% 13% 3% 3%;
+    background-color: #fafafa;
+    border-right: 1px solid black ;
+}
+
+.content .content-second span{
+    color: gray;
+}
+
+.content .content-second .section-three{
+    width: 90%;
+}
+
+.content .content-second .section-three .show{
+    display: none;
+    color: blue;
+}
+
+.content .content-second .section-three .show-product{
+    width: 100%;
+}
+
+.content .content-second .section-three .product-info{
+    line-height: 20px;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.content .content-second .section-three .product-info td{
+    padding: 0 5px;
+}
+
+.content .content-second .section-three .product-info img{
+    width: 43px;
+    height: 65px;
+    display: block;
+    padding: 0 10px;
+    border: 1px solid rgb(216, 215, 215);
+    background-color: white;
+    border-radius: 5px;
+}
+
+.content .content-second .section-three .discount{
+    height: 80px;
+    padding-top: 15px;
+    width: 100%;
+}
+
+.content .content-second .section-three .discount input{
+    width: 95%;
+    height: 37px;
+    line-height: 40px;
+    border-radius: 5px;
+    border: 1px solid #c8c8c8;
+    text-indent: 10px;
+}
+
+.content .content-second .section-three .discount button{
+    width: 100%;
+    height: 40px;
+    float: right;
+    line-height: 38px;
+    background-color: #c8c8c8;
+    border-radius: 5px;
+    color: white;
+    border: 1px solid #c8c8c8;
+}
+
+.content .content-second .section-three .coupon{
+    width: 100%;
+    padding: 15px 0;
+}
+
+.content .content-second .section-three .coupon button{
+    height: 40%;
+    line-height: 38px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #338dbc;
+    background-color: #338dbc;
+    color: white;
+}
+
+.content .content-second .section-three .calculate{
+    width: 100%;
+}
+
+.content .content-second .section-three .calculate td{
+    padding: 10px 0;
+}
+
+.content .content-second .section-three tfoot td{
+    padding-top: 25px;
+    border-top: 1px solid gray;
+}
+
+@media only screen and (max-width: 55.875em){
+    .content{
+        flex-direction: column-reverse;
+        padding-left: 0%;
+        width: 100%;
+    }
+    
+    .banner{
+        display: block;
+    }
+    
+    .content .content-first{
+        width: 90%;
+        overflow-x: hidden;
+        flex: 1;
+        padding: 3% 5%;
+        margin: 0;
+        background-color: #ffffff;
+    }
+
+    .content .content-first .section-one .logo,
+    .content .content-first .section-one .link{
+        display: none;
+    }
+
+    .content .content-first .section-two{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .content .content-first .section-two .user-input{
+        width: 100%;
+    }
+
+    .content .content-first .section-two .user-input .user-info table,
+    .content .content-first .section-two .user-input .user-info tr,
+    .content .content-first .section-two .user-input .user-info td{
+        display: block;
+    }
+
+    .content .content-first .section-two .user-input .input-finish button{
+        width: 100%;
+    }
+
+    .content .content-first .section-two .user-input .input-finish p{
+        width: 100%;
+        text-align: center;
+    }
+
+    select{
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .content .content-second{
+        width: 100%;
+        overflow-x: hidden;
+        padding: 0 5% 5% 5%;
+        flex: 1;
+        margin: 0%;
+        border-bottom: 1px solid black ;
+        border-top: 1px solid black;
+    }
+    
+    .content .content-second .section-three .show{
+        display: block;
+        border-bottom: 1px solid black;
+    }
+
+    #show-product-info {
+        display: none;
+    }
+    
+    #show-coupon {
+        display: none;
+    }
+
+    #show-calculate {
+        display: none;
+        
+    }
+
+    #calculate-footer{
+        display: none;
+    }
+}
+/* Đóng Style Đặt hàng */

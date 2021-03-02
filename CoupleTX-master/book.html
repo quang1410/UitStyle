@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Đặt hàng</title>
+        <meta name="viewport" content="width=device-width">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <link rel="stylesheet" href="css/book.css" type="text/css">
+        <script>
+            // JS của Đặt hàng
+            function toggle(){
+                var m=document.getElementById("change-text");
+                var x=document.getElementById("show-product-info");
+                var y=document.getElementById("show-coupon");
+                var z=document.getElementById("show-calculate");
+                var t=document.getElementById("calculate-footer");
+                var text = m.innerHTML;
+                
+                if (text == "Hiển thị thông tin đơn hàng") {
+                    x.style.display = "block";
+                    y.style.display = "block";
+                    z.style.display = "block";
+                    t.style.display = "block";
+                    m.innerHTML = "Ẩn thông tin đơn hàng";
+
+                } else {
+                    x.style.display = "none";
+                    y.style.display = "none";
+                    z.style.display = "none";
+                    t.style.display = "none";
+                    m.innerHTML = "Hiển thị thông tin đơn hàng";
+                }
+            }
+            // Đóng JS của Đặt hàng
+        </script>
+    </head>
+    <body>
+        <!-- HTML của Đặt hàng -->
+        <div class="banner">
+            <a href="index.html" class="logo">UIT STYLE</a>
+        </div>
+        <div class="content">
+            <div class="content-first">
+                <div class="section-one">
+                    <div>
+                        <a href="index.html" class="logo">UIT STYLE</a>
+                        <p class="link"><a href="detail.html">Giỏ hàng  </a> > Thông tin giao hàng</p>
+                    </div>                    
+                    <div class="security">
+                        <i id="icon" class="fas fa-info-circle fa-2x"></i><span> Thông tin của bạn tuyệt đối bảo mật</span>
+                    </div>
+                </div>
+                
+                <div class="section-two">
+                    <div class="user-login">
+                        <p class="login-header">Thông tin giao hàng</p>
+                        <div class="user">
+                            <span>Bạn đã có tài khoản ? </span><a href="index.html">Đăng nhập</a>
+                        </div>
+                    </div>
+                    
+                    <div class="user-input">
+                        <table class="user-info">
+                            <tr>
+                                <td colspan="3" class="box1">
+                                    <input type="text"   placeholder="Họ và tên">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" class="box1 mini1">
+                                    <input type="text" placeholder="Email" >
+                                </td>
+                                <td align="right" class="box1 mini2">
+                                    <input type="text" placeholder="Số điện thoại">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p class="alert"><i>Điền chính xác Email để không bỏ lỡ cập nhật mới nhất về đơn hàng của bạn và chương trình ưu đãi đặc biệt từ UIT Style!</i></p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="box1 extra">
+                                    <label>Địa chỉ</label>
+                                    <input type="text" placeholder="" >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="box1 extra">
+                                    <div class="field-first">
+                                        <label>Tỉnh / thành</label>
+                                        <select name="" id="">
+                                            <option value="" selected>Chọn tỉnh / thành</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Đà Nẵng</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="box1 extra">
+                                    <div class="field-second">
+                                        <label>Quận / Huyện</label>
+                                        <select name="" id="">
+                                            <option value="" selected>Chọn quận / huyện</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td class="box1 extra">
+                                    <div class="field-third">
+                                        <label>Phường / Xã</label>
+                                        <select name="" id="">
+                                            <option value="" selected>Chọn phường / xã</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3">
+                                    <p class="alert"><i>Vui lòng nhập đầy đủ thông tin địa chỉ để nhận hàng nhanh hơn!</i></p>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="method">
+                            <p class="method-header">Phương thức vận chuyển</p>
+                            <table class="transport">
+                                <tr>
+                                    <td class="box2">
+                                        <input type="radio"><span>Giao hàng miễn phí</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <p class="method-header">Phương thức thanh toán</p>
+                            <table class="pay">
+                                <tr>
+                                    <td class="box2 first" colspan="4" style="border-bottom: none;">
+                                        <input type="radio" name="pay"><span>Thanh toán khi giao hàng (COD)</span>
+                                    </td>
+                                <tr>
+                                    <td class="box2" colspan="4" style="border-bottom: none;">
+                                        <input type="radio" name="pay"><span>Thanh toán qua ATM / Visa / MasterCard</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="box2" colspan="4" style="border-bottom: none;">
+                                        <input type="radio" name="pay"><span>Thanh toán online qua ví MoMo</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="box2 last" colspan="4">
+                                        <input type="radio" name="pay"><span>Thanh toán online qua ví Moca</span>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <div class="input-finish">
+                                <button type="submit" onclick="window.location.href='index.html'">Hoàn tất đơn hàng</button>
+                                <p><a href="index.html"><i class="fas fa-arrow-left"></i> Giỏ hàng</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-second">
+                <div class="section-three">
+                    <div class="show">
+                        <table class="show-product">
+                            <tr>
+                                <td>
+                                    <p id="change-text" onclick="toggle()">Hiển thị thông tin đơn hàng</p>
+                                </td>
+                                <td align="right">
+                                    <span style="color: black; font-size: 20px;">529,000 VND</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    
+
+                    <div id="show-product-info">
+                        <table class="product-info">
+                            <tr>
+                                <td>
+                                    <img src="images/men_nau_1_3ff2e1e41b40429b9e07570815627eb9_medium.webp" alt="">
+                                </td>
+                                <td>
+                                    <p>Áo khoác Hoodie Basic Nam MHO</p>
+                                    <p><span>Nâu / Men / L</span></p>
+                                    <p><span>Số lượng: 1</span></p>
+                                </td>
+                                <td>
+                                    <p>529,000 VND</p>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </div>
+
+                    
+
+                    <table class="discount">
+                        <tr>
+                            <td class="discount-text">
+                                <input type="text" placeholder="Mã giảm giá">
+                            </td>
+                            <td class="discount-submit">
+                                <button type="submit">Sử dụng</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p><span>Bạn có mã giảm giá? Vui lòng nhập tại đây!</span></p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    
+
+                    <div id="show-coupon">
+                        <hr>
+                        <table class="coupon">
+                            <tr>
+                                <td>
+                                    <p style="font-size: 18px;">UIT Style Point</p>
+                                </td>
+                                <td align="right">
+                                    <button type="submit" onclick="window.location.href='index.html'">Đăng nhập</button>
+                                </td>
+                            </tr>
+                        </table>
+                        <hr>
+                    </div>
+
+                    
+
+                    <div id="show-calculate">
+                        <table class="calculate">
+                            <thead></thead>
+                            <tbody>
+                                <tr>
+                                    <td><span>Tạm tính</span></td>
+                                    <td align="right">529,000 VND</td>
+                                </tr>
+                                <tr>
+                                    <td><span>Phí vận chuyển</span></td>
+                                    <td align="right">Miễn phí</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <td>Tổng cộng</td>
+                                <td align="right">
+                                    <div style="color: gray;">VND <span style="font-size: 24px; color: black;">529,000 VND</span></div>
+                                </td>
+                            </tfoot>
+                        </table>
+                    </div>
+                    
+                    <div id="calculate-footer">
+                        <p><i><span>UIT Style sẽ xác nhận đơn hàng bằng email hoặc gọi điện. Bạn vui lòng kiểm tra email hoặc nghe máy sau khi đặt hàng thành công.</span></i></p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!-- Đóng HTML của Đặt hàng -->
+    </body>
+</html>
